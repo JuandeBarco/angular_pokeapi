@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pokemon-details.component.css'
 })
 export class PokemonDetailsComponent {
-  @Input() pokemon: object = {};
+  @Input() pokemon: any = null;
 }

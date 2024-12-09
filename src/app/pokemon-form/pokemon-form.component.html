@@ -6,4 +6,8 @@
     </form>
 </div>
 
+<div *ngIf="loading">Loading...</div>
+
+<div *ngIf="errorMessage" style="color: red">{{ errorMessage }}</div>
+
 <app-pokemon-details [pokemon]="pokemonData"></app-pokemon-details>
