@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
+import { PokemonDetailsComponent } from '../pokemon-details/pokemon-details.component';
+
 @Component({
   selector: 'app-pokemon-form',
-  imports: [FormsModule],
+  imports: [FormsModule, PokemonDetailsComponent],
   templateUrl: './pokemon-form.component.html',
   styleUrl: './pokemon-form.component.css'
 })

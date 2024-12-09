@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-pokemon-details',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './pokemon-details.component.html',
   styleUrl: './pokemon-details.component.css'
 })
 export class PokemonDetailsComponent {
-
+  @Input() pokemon: object = {};
 }
