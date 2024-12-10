@@ -1,8 +1,20 @@
-<div>
+<div class="mt-3 text-center">
     <h2>Busca tu Pokémon</h2>
-    <form>
-        <input type="text" [(ngModel)]="pokemonName" name="pokemonName" placeholder="Nombre del Pokémon">
-        <button (click)="searchPokemon()" type="submit">Buscar</button>
+    <form class="row justify-content-center align-items-center g-2">
+        <div class="col-auto">
+            <input 
+                type="text" 
+                class="form-control" 
+                [(ngModel)]="pokemonName" 
+                name="pokemonName" 
+                placeholder="Nombre del Pokémon">
+        </div>
+        <div class="col-auto">
+            <button 
+                type="submit" 
+                class="btn btn-primary" 
+                (click)="searchPokemon()">Buscar</button>
+        </div>
     </form>
 </div>
 
