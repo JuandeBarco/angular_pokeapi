@@ -9,9 +9,14 @@
                 </div>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">Habilidad:
+                <span class="badge text-bg-secondary">{{ pokemon.abilities[0].ability.name }}</span>
+                <p class="fst-italic text-muted mt-3">{{ abilityEffect }}</p>
+              </li>
+              <li *ngIf="pokemon.abilities.length > 1" class="list-group-item">Habiidad oculta:
+                <span class="badge text-bg-secondary">{{ pokemon.abilities[1].ability.name }}</span>
+                <p class="fst-italic text-muted mt-3">{{ hiddenAbilityEffect }}</p>
+                </li>
             </ul>
             <div class="card-body">
               <a href="#" class="card-link">Card link</a>
